@@ -2,8 +2,8 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateFamily = /* GraphQL */ `
-  subscription OnCreateFamily {
-    onCreateFamily {
+  subscription OnCreateFamily($owner: String!) {
+    onCreateFamily(owner: $owner) {
       id
       name
       members {
@@ -13,17 +13,19 @@ export const onCreateFamily = /* GraphQL */ `
           familyID
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
 export const onUpdateFamily = /* GraphQL */ `
-  subscription OnUpdateFamily {
-    onUpdateFamily {
+  subscription OnUpdateFamily($owner: String!) {
+    onUpdateFamily(owner: $owner) {
       id
       name
       members {
@@ -33,17 +35,19 @@ export const onUpdateFamily = /* GraphQL */ `
           familyID
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
 export const onDeleteFamily = /* GraphQL */ `
-  subscription OnDeleteFamily {
-    onDeleteFamily {
+  subscription OnDeleteFamily($owner: String!) {
+    onDeleteFamily(owner: $owner) {
       id
       name
       members {
@@ -53,17 +57,19 @@ export const onDeleteFamily = /* GraphQL */ `
           familyID
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
 export const onCreateFamilyMember = /* GraphQL */ `
-  subscription OnCreateFamilyMember {
-    onCreateFamilyMember {
+  subscription OnCreateFamilyMember($owner: String!) {
+    onCreateFamilyMember(owner: $owner) {
       id
       firstName
       familyID
@@ -75,15 +81,17 @@ export const onCreateFamilyMember = /* GraphQL */ `
         }
         createdAt
         updatedAt
+        owner
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
 export const onUpdateFamilyMember = /* GraphQL */ `
-  subscription OnUpdateFamilyMember {
-    onUpdateFamilyMember {
+  subscription OnUpdateFamilyMember($owner: String!) {
+    onUpdateFamilyMember(owner: $owner) {
       id
       firstName
       familyID
@@ -95,15 +103,17 @@ export const onUpdateFamilyMember = /* GraphQL */ `
         }
         createdAt
         updatedAt
+        owner
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
 export const onDeleteFamilyMember = /* GraphQL */ `
-  subscription OnDeleteFamilyMember {
-    onDeleteFamilyMember {
+  subscription OnDeleteFamilyMember($owner: String!) {
+    onDeleteFamilyMember(owner: $owner) {
       id
       firstName
       familyID
@@ -115,9 +125,11 @@ export const onDeleteFamilyMember = /* GraphQL */ `
         }
         createdAt
         updatedAt
+        owner
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;

@@ -13,11 +13,13 @@ export const getFamily = /* GraphQL */ `
           familyID
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -36,6 +38,7 @@ export const listFamilys = /* GraphQL */ `
         }
         createdAt
         updatedAt
+        owner
       }
       nextToken
     }
@@ -55,9 +58,11 @@ export const getFamilyMember = /* GraphQL */ `
         }
         createdAt
         updatedAt
+        owner
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -77,9 +82,11 @@ export const listFamilyMembers = /* GraphQL */ `
           name
           createdAt
           updatedAt
+          owner
         }
         createdAt
         updatedAt
+        owner
       }
       nextToken
     }

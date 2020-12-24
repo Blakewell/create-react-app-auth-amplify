@@ -16,11 +16,13 @@ export const createFamily = /* GraphQL */ `
           familyID
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -39,11 +41,13 @@ export const updateFamily = /* GraphQL */ `
           familyID
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -62,11 +66,13 @@ export const deleteFamily = /* GraphQL */ `
           familyID
           createdAt
           updatedAt
+          owner
         }
         nextToken
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -87,9 +93,11 @@ export const createFamilyMember = /* GraphQL */ `
         }
         createdAt
         updatedAt
+        owner
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -110,9 +118,11 @@ export const updateFamilyMember = /* GraphQL */ `
         }
         createdAt
         updatedAt
+        owner
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -133,9 +143,11 @@ export const deleteFamilyMember = /* GraphQL */ `
         }
         createdAt
         updatedAt
+        owner
       }
       createdAt
       updatedAt
+      owner
     }
   }
 `;
