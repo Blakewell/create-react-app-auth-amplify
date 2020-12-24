@@ -1,0 +1,12 @@
+type Family @model @auth(rules: [{ allow: owner}]) {
+  id: ID!
+  name: String!
+  members: [FamilyMember] @connection(keyName: "byFamily", fields: ["id"])
+}
+
+type FamilyMember @model @auth(rules: [{ allow: owner}]) @key(name: "byFamily", fields: ["familyID"]) {
+  id: ID!
+  firstName: String!
+  familyID: ID!
+  family: Family @connection(fields: ["familyID"])
+}
